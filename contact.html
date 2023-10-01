@@ -1,0 +1,92 @@
+<!---Hameem Quader 100786057-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <!--Uses unicode 8 for the charecters-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="contact.css">
+        <link rel="stylesheet" href="tablet.css">
+        <link rel="stylesheet" href="mobile.css">
+        <!--Links all the nessesary CSS files-->
+
+        <title>Get in Touch</title>
+        <!--Title addes test to the the browsers tab for this webpage-->
+    </head>
+    
+    <body>
+        <header>
+            <nav><!--Navigation bar with links to all the pages-->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Me</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact Me</a></li>
+                    <!--page links-->
+                </ul>
+            </nav>
+        </header>
+        
+        <!--Contacts section-->
+        <section>
+            <!--Page Header-->
+            <h2>Get in Touch</h2>
+            <!--Form elements-->
+            <form action="#" method="post">
+                <!-- Name Input -->
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                
+                <!-- Email Input -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                
+                <!-- Comments Textarea -->
+                <div class="form-group">
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" required></textarea>
+                </div>
+                
+                <!-- Newsletter Subscription Checkbox -->
+                <div class="form-group">
+                    <label for="subscribe">Subscribe to my newsletter?:</label>
+                    <input type="checkbox" id="subscribe" name="subscribe">
+                </div>
+                
+                <!-- Country Dropdown -->
+                <div class="form-group">
+                    <label for="country">Country:</label>
+                    <select id="country" name="country">
+                        <option value="usa">USA</option>
+                        <option value="canada">Canada</option>
+                        <option value="uk">UK</option>
+                        <!-- Add more country options here -->
+                    </select>
+                </div>
+                
+                <!-- Math Question Input -->
+                <div class="form-group">
+                    <label for="math-question">Math Question: What is 2 + 2?</label>
+                    <input type="number" id="math-question" name="math-question" required>
+                </div>
+                
+                <!-- Form Submission Buttons -->
+                <div class="form-group">
+                    <button type="reset">Reset</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </section>
+        <!--Footer-->
+        <footer>
+            <p>Contact: hameem.quader@ontariotechu.net</p>
+            <p>&copy; 2023 Hameem Quader</p>
+        </footer>
+    </body>
+</html>

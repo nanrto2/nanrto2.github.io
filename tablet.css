@@ -1,0 +1,14 @@
+/* Hameem Quader
+100786057*/
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+    /* styles for tablet view */
+    nav ul li {
+        border-style: solid;
+        font-size: x-large;
+        display: grid;
+        margin: 0;
+    }
+}

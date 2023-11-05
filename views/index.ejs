@@ -1,3 +1,4 @@
+<!--head partial-->
 <%- include /partials/head.ejs -%> 
 
   <body>
@@ -5,13 +6,24 @@
      
      <%- include /partials/navbar.ejs -%>   
     </header>
-    <!--Text section-->
-    <section>
+    <!--main section-->
+    <div class="container-fluid">
+        <section>
 
-        <h1>Welcome to the <%= title %> Page</h1>
-        
-    </section>
-    <!--Footer-->
+            <h1>Welcome to the <%= title %> Page</h1>
+            <!--Content partials-->
+            <% if (title == "About Me"){ %>
+                <%- include /partials/about.ejs -%>
+            <% } %>
+            <% if (title == "My Projects"){ %>
+                <%- include /partials/projects.ejs -%>
+            <% } %>
+            <% if (title == "Contact Me"){ %>
+                <%- include /partials/contact.ejs -%>
+            <% } %>
+        </section>
+    </div>
+    <!--Footer partial-->
     <% include /partials/footer.ejs %>
 </body>
 </html>

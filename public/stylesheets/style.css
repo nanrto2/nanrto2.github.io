@@ -1,0 +1,59 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+/*Styling for the body element*/
+body {
+  background: conic-gradient(from 180deg, rgb(253, 36, 68), rgb(0, 203, 159), rgb(30, 203, 255));
+  font-family: Arial, sans-serif; /*Font fallback*/
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/*Styling for the header element*/
+header {
+  background-color: #090528;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+/*Styling for the navbar elements*/
+nav ul {
+  list-style: none;
+  
+  padding: 0;
+}
+
+nav ul li {
+  display:inline;
+  margin: 10px;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: #fff;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: #fff;
+}
+/*Styling for the main section of each page element*/
+section {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  text-align: center;
+}
+/*Styling for the footer element*/
+footer {
+  position: absolute;
+  bottom: 0;
+  background-color: #090528;
+  color: #fff;
+  text-align: center;
+  font-size: 75%;
+  width: 100%;
+  
+}

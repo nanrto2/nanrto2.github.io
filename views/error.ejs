@@ -1,0 +1,17 @@
+<%- include /partials/head.ejs -%> 
+  <body>
+    <header>
+        <%- include /partials/navbar.ejs -%>  
+    </header>
+    <!--Text section-->
+    <div class="container-fluid">
+        <section>    
+            <h1><%= message %></h1>
+            <h2><%= error.status %></h2>
+            <pre><%= error.stack %></pre>
+        </section>
+    </div>
+    <!--Footer-->
+    <% include /partials/footer.ejs %>
+</body>
+</html>

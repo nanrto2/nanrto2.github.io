@@ -1,10 +1,10 @@
 <!--head partial-->
-<%- include /opt/render/project/src/partials/head.ejs -%> 
+<%- include /opt/render/project/src/views/partials/head.ejs -%> 
 
   <body>
     <header>
      
-     <%- include /opt/render/project/src/partials/navbar.ejs -%>   
+     <%- include /opt/render/project/src/views/partials/navbar.ejs -%>   
     </header>
     <!--main section-->
     <div class="container-fluid">
@@ -13,17 +13,17 @@
             <h1>Welcome to the <%= title %> Page</h1>
             <!--Content partials-->
             <% if (title == "About Me"){ %>
-                <%- include /partials/about.ejs -%>
+                <%- include /views/partials/about.ejs -%>
             <% } %>
             <% if (title == "My Projects"){ %>
-                <%- include /partials/projects.ejs -%>
+                <%- include /views/partials/projects.ejs -%>
             <% } %>
             <% if (title == "Contact Me"){ %>
-                <%- include /partials/contact.ejs -%>
+                <%- include /views/partials/contact.ejs -%>
             <% } %>
         </section>
     </div>
     <!--Footer partial-->
-    <% include /opt/render/project/src/partials/footer.ejs %>
+    <% include /opt/render/project/src/views/partials/footer.ejs %>
 </body>
 </html>

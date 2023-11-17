@@ -2,16 +2,17 @@
 <% include partials/main_nav.ejs %>
 <main>
   <h1>Welcome to the <%= title %> Page</h1>
-            <!--Content partials-->
-            <% if (title == "About Me"){ %>
-                <% include partials/about.ejs -%>
-            <% } %>
-            <% if (title == "My Projects"){ %>
-                <% include partials/projects.ejs -%>
-            <% } %>
-            <% if (title == "Contact Me"){ %>
-                <% include partials/contact.ejs -%>
-            <% } %>
+    <!--Content partials-->
+    <% if (title == "About Me"){ %>
+        <% include partials/about.ejs -%>
+    <% } %>
+    
+    <% if (title == "My Projects"){ %>
+        <% include partials/projects.ejs -%>
+    <% } %>
+    <% if (title == "Contact Me"){ %>
+        <% include partials/contact.ejs -%>
+    <% } %>
 </main>
-<% include partials/bottom_nav.ejs %>
+<% include partials/bottom.ejs %>
 <% include partials/footer.ejs %>

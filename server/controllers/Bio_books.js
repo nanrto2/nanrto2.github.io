@@ -7,7 +7,7 @@ module.exports.DislayBooklist = async (req,res,next)=>{ //< Mark function as asy
     try{
        const BookList = await Book.find(); //< Use of await keyword
        res.render('book/list', {
-          title: 'Book List', 
+          title: 'Games Played', 
           BookList: BookList
        });
     }catch(err){
@@ -23,7 +23,7 @@ module.exports.DislayBooklist = async (req,res,next)=>{ //< Mark function as asy
     try{
         res.render('book/add',
         {
-            title:'Add Book'
+            title:'New Game'
         })
     }
     catch(err)
@@ -46,7 +46,7 @@ module.exports.ProcessBook = async (req,res,next)=>{
             "Price": req.body.Price
         });
         Book.create(newBook).then(() =>{
-            res.redirect('/bookslist')
+            res.redirect('/games')
         })
     }
     catch(error){
@@ -89,7 +89,7 @@ module.exports.ProcessEditBook = (req,res,next)=>{
             "Price": req.body.Price
         });
         Book.findByIdAndUpdate(id,updatedBook).then(()=>{
-            res.redirect('/bookslist')
+            res.redirect('/games')
         });
     }
     catch(error){
@@ -106,7 +106,7 @@ module.exports.DeleteBook = (req,res,next)=>{
         let id = req.params.id;
         Book.deleteOne({_id:id}).then(() =>
         {
-            res.redirect('/bookslist')
+            res.redirect('/games')
         })
     }
     catch(error){
